@@ -1,0 +1,106 @@
+ @import './variables';
+
+
+
+ .ruta {
+ 	position: relative;
+ 	min-height: calc(100vh - 65px);
+ 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0190d1+0,ffffff+100 */
+ 	background: #0190d1; /* Old browsers */
+ 	background: -moz-linear-gradient(top, #0190d1 0%, #ffffff 100%); /* FF3.6-15 */
+ 	background: -webkit-linear-gradient(top, #0190d1 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+ 	background: linear-gradient(to bottom, #0190d1 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+ 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0190d1', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+	
+	&Data {
+		max-width: 800px;
+		margin: 0 auto;
+		text-align: center;
+		padding-top: 50px;
+
+		h1 {
+			color: $blanco;
+		}
+		p {
+			color: $blanco;
+			font-weight: 100;
+			letter-spacing: 2px;
+			font-size: 18px;
+			margin: 50px 0;
+		}
+	}
+
+ 	.mountain {
+ 		width: 100vw;
+
+ 		svg {
+ 			width: 100vw;
+ 			height: auto;
+
+ 			.nube1 {
+ 				animation: nubeUno 150s ease-in-out infinite;
+ 				// transform: translateX(0);
+ 			}
+
+ 			.nube2 {
+ 				animation: nubeDos 140s ease-in-out infinite;
+ 				// transform: translateX(0);
+ 			}
+ 			.nube3 {
+ 				animation: nubeTres 60s ease-in-out infinite;
+ 				// transform: translateX(0);
+ 			}
+ 		}
+ 	}
+
+ 	.regla {
+ 		position: absolute;
+ 		right: 2em;
+ 		bottom: 0;
+ 	}
+ 	.iconos {
+ 		position: absolute;
+ 		top: 40%;
+ 		left: 2em;
+ 	}	
+ }
+
+
+ @keyframes nubeUno {
+ 	0% {
+ 		transform: translateX(359px);
+ 	}
+ 	50% {
+ 		transform: translateX(1059px);
+ 	}
+ 	100% {
+ 		transform: translateX(359px);
+ 	}
+ }
+
+ @keyframes nubeDos {
+ 	0% {
+ 		transform: translateX(1150px);
+ 	}
+ 	50% {
+ 		transform: translateX(5px);
+ 	}
+ 	100% {
+ 		transform: translateX(1150px);
+ 	}
+ }
+
+ @keyframes nubeTres {
+ 	0% {
+ 		opacity: .5;
+ 		transform: translateX(189px);
+ 	}
+ 	50% {
+ 		opacity: 1;
+ 		transform: translateX(200px);
+ 	}
+ 	100% {
+ 		opacity: .5;
+ 		transform: translateX(189px);
+ 	}
+ }

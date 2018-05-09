@@ -1,0 +1,74 @@
+@import './variables';
+
+
+.formulacion-de-proyecto {
+
+	.container-flex {
+		background-image: url(../img/nubes.png);
+		background-position: right 2%; 
+	} 
+}
+
+.addActivity {
+	background-color: $blancusco;
+	width: 100%;
+	min-height: 100vh;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&Container {
+		max-width: 800px;
+		width: 800px;
+	}
+	&Header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.name {
+
+		}
+		.activityDate {
+			display: flex;
+			.user, .fase  {
+				.dropdown {
+					width: 100%;
+
+					.btn {
+						border: none;
+						width: 100%;
+						height: 40px;
+						color: $verdeOscuro;
+						background-color: transparent;
+						border-radius: 0;
+					}
+				}
+			}
+			.date {
+				display: flex;
+				input {
+					border: none;
+					box-shadow: none;
+					height: 40px;
+					width: 80px;
+					background-color: transparent;
+					border-radius: 0;
+				}
+				.icon {
+					width: 40px;
+					height: 40px;
+					background-color: $verdeClaro;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+				}
+			}
+			.fase {
+				
+			}
+		}
+		
+	}
+}

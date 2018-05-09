@@ -1,0 +1,28 @@
+@import './variables';
+
+
+
+.noActivities {
+	margin: 0 auto;
+	display: block;
+	max-width: 800px;
+	margin-top: 200px;
+	
+	.message {
+		border: 1px dashed $gris;
+		color: $gris;
+		padding: 1em 0;
+		margin-bottom: 2em;
+		text-align: center;
+	}
+	.cta {
+		
+		.btn-square {
+			width: 400px;
+			max-width: 400px;
+			margin: 0 auto;
+		}
+
+	}
+
+}

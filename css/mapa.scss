@@ -1,0 +1,80 @@
+@import './variables';
+
+.mapa {
+	position: fixed;
+	bottom: -20px;
+	width: 100%;
+
+	svg {
+		height: auto;
+		width: 100%;	
+
+		.alistamientoBtn {
+
+			cursor: pointer;
+			@include prefix(transition, all .5s ease-in-out);
+
+			&Mark {
+				@include prefix(transition, all .5s ease-in-out);
+			}
+			&:hover {
+				
+				.alistamientoBtnMark {
+					fill: $verdeOscuro;
+					stroke: $verdeClaro;
+				}
+			}
+		}
+
+		.campamentoBaseBtn {
+
+			cursor: pointer;
+			@include prefix(transition, all .5s ease-in-out);
+
+			&Mark {
+				@include prefix(transition, all .5s ease-in-out);
+			}
+			&:hover {
+				
+				.campamentoBaseBtnMark {
+					fill: $verdeOscuro;
+					stroke: $verdeClaro;
+				}
+			}
+		}
+
+		.campamentoUnoBtn {
+
+			cursor: pointer;
+			@include prefix(transition, all .5s ease-in-out);
+
+			&Mark {
+				@include prefix(transition, all .5s ease-in-out);
+			}
+			&:hover {
+				
+				.campamentoUnoBtnMark {
+					fill: $verdeOscuro;
+					stroke: $verdeClaro;
+				}
+			}
+		}
+
+		.campamentoDosBtn {
+
+			cursor: pointer;
+			@include prefix(transition, all .5s ease-in-out);
+
+			&Mark {
+				@include prefix(transition, all .5s ease-in-out);
+			}
+			&:hover {
+				
+				.campamentoDosBtnMark {
+					fill: $verdeOscuro;
+					stroke: $verdeClaro;
+				}
+			}
+		}
+	}
+}
