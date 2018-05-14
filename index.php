@@ -56,6 +56,10 @@
 
       require_once('views/cursos.php');
 
+    }elseif($_REQUEST['content']=='cursos-disponibles'){
+
+      require_once('views/cursos-disponibles.php');
+
     }elseif($_REQUEST['content']=='perfil'){
 
       require_once('views/perfil.php');
